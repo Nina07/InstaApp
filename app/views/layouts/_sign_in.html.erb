@@ -1,9 +1,9 @@
 <% if user_signed_in? %>
-  <a href="<%= destroy_user_session_path%>" data-method="delete">
+  <%= link_to user_path(current_user) do %>
     <i class="fa fa-user"></i>
-  </a>
+  <% end %>
 <% else %>
-  <a href="<%= new_user_session_path%>">
+  <% link_to new_user_session_path do %>
     <i class="fa fa-sign-in"></i>
-  </a>
+  <% end %>
 <% end %>
