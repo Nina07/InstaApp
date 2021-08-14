@@ -55,3 +55,27 @@
     }
   }
 }
+
+.form-upload{
+  border: 1px solid #dbdbdb;
+  height: auto;
+  margin: auto 160px;
+  padding: 30px;
+  border-radius: 3px;
+  input[type='text']{
+    width: 100%;
+  }
+}
+
+.profile .avatar{
+  .wrapper{
+    width: 140px;
+    height: 140px;
+    margin: 40px auto;
+  }
+  .wrapper img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+}
