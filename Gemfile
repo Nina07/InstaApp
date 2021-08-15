@@ -20,6 +20,7 @@ gem 'jbuilder', '~> 2.7'
 
 gem 'devise'
 gem 'font-awesome-rails'
+gem 'acts_as_votable', '~> 0.10.0'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
