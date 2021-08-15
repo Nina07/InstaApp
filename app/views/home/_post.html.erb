@@ -4,6 +4,7 @@
   </div>
   <%= image_tag post.image, class: 'main-image' %>
   <div class="description">
+    <%= render partial: "posts/likes", locals: {post: post} %>
     <%= render partial: "posts/description", locals: {post: post} %>
     <%= render partial: "posts/comments", locals: {post: post} %>
     <%= render partial: "comments/create", locals: {post: post}%>

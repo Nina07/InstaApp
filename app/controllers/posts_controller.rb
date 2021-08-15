@@ -9,6 +9,16 @@ class PostsController < ApplicationController
         redirect_to root_path
     end
 
+    def like
+        @post = Post.find(params[:id])
+        if @post.liked_by current_user
+            respond_to do |format|
+              format.html { redirect_to :root_path }
+              format.js
+            end
+        end
+    end
+
     private
     def post_params
         params.require(:post).permit(:description, :image, :user_id)
