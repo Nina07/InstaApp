@@ -1,24 +1,20 @@
-# README
+**Ruby version:** 2.5.1
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+**Rails:** 6.1.4
 
-Things you may want to cover:
+**Database:** PostgreSQL
 
-* Ruby version
+**Gems:** Devise, acts_as_votable
 
-* System dependencies
 
-* Configuration
+**Problem statement:**
 
-* Database creation
+To design an application with basic functionalities similar to Instagram. A user after successfully signing up to the application can post photos, like and comment  other user's posts. 
+Data models: 
+  - users
+  - posts
+  - comments
 
-* Database initialization
+**Limitations/Future extensions:**
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+There is no follow option available at the moment. The applications landing page ( index acion ) after login shows posts from all the users, such that the current user can like/comment on any post. 
